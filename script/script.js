@@ -1,5 +1,5 @@
 gsap.from(".CTA" , {
-    x:-50,
+    y:-50,
     opacity:0,
     duration:2,
     repeat:-1
