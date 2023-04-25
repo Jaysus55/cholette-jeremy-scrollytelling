@@ -64,6 +64,7 @@ section{
 
 .terre {
     position: absolute;
+    top: 10vh;
     left: 15vw;
     z-index: 1;
         }        
@@ -74,6 +75,44 @@ position: relative;
 background-size: cover;
 }
 
+.chapitre2{
+    position: relative;
+    background-size: cover;
+    }
+
+.chapitre3{
+    position: relative;
+    background-size: cover;
+    }
+
+.chapitre4{
+    position: relative;
+    background-size: cover;
+    }
+
+.chapitre5{
+    position: relative;
+    background-size: cover;
+    }
+
+.chapitre6{
+    position: relative;
+    background-size: cover;
+    }
+
+        
+.chapitre7{
+    position: relative;
+    background-size: cover;
+    }
+
+            
+.chapitre8{
+    position: relative;
+    background-size: cover;
+    }
+            
+
 .fondDebut{
     object-fit: cover;
     width: 100%;
@@ -81,8 +120,21 @@ background-size: cover;
     position:absolute;
 }   
 
+.fondMilieu{
+    object-fit: cover;
+    width: 120%;
+    height: 100%;
+    position:absolute;
+}   
 
 
+.fondFin{
+    object-fit: cover;
+    width: 100vw;
+    aspect-ratio: 1083/373;
+    position:absolute;
+    top:15vh;
+}   
 
 /*test sprite sheet -----------------------------------------------------------------------------------------------------*/
 
