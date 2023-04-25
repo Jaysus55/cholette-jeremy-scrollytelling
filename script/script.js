@@ -10,3 +10,6 @@ gsap.from(".CTA" , {
   gsap.from(".terre" , {
     rotation:-360,duration:150,repeat:-1,ease:"none"
   })  
+
+
+  
