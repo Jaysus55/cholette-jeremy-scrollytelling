@@ -111,11 +111,6 @@ border: 10px solid red ;
     background-size: cover;
     }
 
-.chapitre3{
-    position: relative;
-    background-size: cover;
-    }
-
 .planete03{
     position: absolute;
     width: 25vw;
@@ -141,6 +136,12 @@ border: 10px solid red ;
 }
 
 /*Chapitre3 -----------------------------------------------------------------------------------------------------*/
+
+
+.chapitre3{
+    position: relative;
+    background-size: cover;
+    }
 
 .planete05{
     position: absolute;
