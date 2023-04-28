@@ -121,6 +121,7 @@ border: 10px solid red ;
     width: 25vw;
     top: 20vh;
     left: 20vw;
+    z-index: 1;
 }
 
 .planete04{
@@ -128,11 +129,12 @@ border: 10px solid red ;
     width: 10vw;
     top: 80vh;
     left: 70vw;
+    z-index: 1;
 }
 
 .fusee{
     position: absolute;
-    transform: translate(50%) rotate(35deg);
+    transform: translate(50%) rotate(50deg);
     width: 5vw;
     top: 90vh;
     left: 10vw;
@@ -220,7 +222,7 @@ border: 10px solid red ;
     z-index: 3;
     }
 
-.baleine1{
+.no1{
     position: absolute;
     width: 40vw;
     top: 60vh;
@@ -228,7 +230,7 @@ border: 10px solid red ;
     z-index: 1;
 }    
 
-.baleine2{
+.no2{
     position: absolute;
     width: 30vw;
     top: 40vh;
@@ -236,15 +238,15 @@ border: 10px solid red ;
     z-index: 1;
 }    
 
-.baleine3{
+.no3{
     position: absolute;
     width: 20vw;
     top: 90vh;
-    left: 10vw;
+    left: 5vw;
     z-index: 1;
 }    
 
-.baleine4{
+.no4{
     position: absolute;
     width: 50vw;
     top: 90vh;
@@ -252,7 +254,7 @@ border: 10px solid red ;
     z-index: 1;
 }    
 
-.baleine5{
+.no5{
     position: absolute;
     width: 20vw;
     top: 20vh;
@@ -302,7 +304,7 @@ border: 10px solid red ;
     background-size: cover;
     }
 
-.planeteBriser1{
+.Briser1{
     position: absolute;
     width: 15vw;
     top: 50vh;
@@ -310,7 +312,7 @@ border: 10px solid red ;
     z-index: 1;
 }
 
-.planeteBriser2{
+.Briser2{
     position: absolute;
     width: 3vw;
     top: 52vh;
@@ -318,7 +320,7 @@ border: 10px solid red ;
     z-index: 1;
 }
 
-.planeteBriser3{
+.Briser3{
     position: absolute;
     width: 7vw;
     top: 74vh;
@@ -326,7 +328,7 @@ border: 10px solid red ;
     z-index: 1;
 }
 
-.planeteBriser4{
+.Briser4{
     position: absolute;
     width: 6vw;
     top: 50vh;
@@ -343,6 +345,54 @@ border: 10px solid red ;
     background-size: cover;
     }
 
+.asteroid4{
+    position: absolute;
+    width: 20vw;
+    top: 10vh;
+    left: 15vw;
+    z-index: 1;
+}    
+
+.asteroid5{
+    position: absolute;
+    width: 15vw;
+    top: 40vh;
+    left: 40vw;
+    z-index: 1;
+}
+
+.asteroid6{
+    position: absolute;
+    width: 5vw;
+    top: 10vh;
+    left: 60vw;
+    z-index: 1;
+}
+
+.asteroid7{
+    position: absolute;
+    width: 30vw;
+    top: 30vh;
+    left: 65vw;
+    z-index: 1;
+}
+
+.asteroid8{
+    position: absolute;
+    width: 10vw;
+    top: 80vh;
+    left: 20vw;
+    z-index: 1;
+}
+
+.asteroid9{
+    position: absolute;
+    width: 5vw;
+    top: 80vh;
+    left: 50vw;
+    z-index: 1;
+}
+
         
 /*Chapitre8 -----------------------------------------------------------------------------------------------------*/    
 
@@ -354,9 +404,9 @@ border: 10px solid red ;
 
 .cthulu{
     position: absolute;
-    width: 80vw;
+    width: 70vw;
     top: 50vh;
-    left: 20vw;
+    left: 28vw;
     z-index: 1;
 }    
             
