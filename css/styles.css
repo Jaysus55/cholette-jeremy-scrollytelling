@@ -84,9 +84,10 @@ section{
 /*Chapitre1 -----------------------------------------------------------------------------------------------------*/
 
         
-.chapitre1{
+#chapitre1{
 position: relative;
 background-size: cover;
+border: 1px solid red;
 }
 
 .planete01{
@@ -109,6 +110,7 @@ background-size: cover;
 font-family: 'Aldrich', sans-serif;
 font-size: 5vmin;
 -webkit-text-stroke: 0.3px var(--blanc);
+z-index: 1;
 }
 
 .histoire1  {
@@ -119,6 +121,7 @@ font-size: 5vmin;
     bottom: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
     }   
 
 
@@ -142,9 +145,10 @@ font-size: 5vmin;
         }   
      
 
-.chapitre2{
+#chapitre2{
     position: relative;
     background-size: cover;
+    border: 1px solid red;
     }
 
 .planete03{
@@ -190,9 +194,10 @@ font-size: 5vmin;
         z-index: 2;
         }   
 
-.chapitre3{
+#chapitre3{
     position: relative;
     background-size: cover;
+    border: 1px solid red;
     }
 
 .planete05{
@@ -214,6 +219,7 @@ font-size: 5vmin;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(24);
+    animation-play-state: paused;
     }
     
     .is-scrolling .sprite1{
@@ -228,8 +234,7 @@ font-size: 5vmin;
               .sprite1 {
                  margin: 0 auto;
               }
-              
-    
+
 
     .sprite2 {
         position: absolute;
@@ -243,6 +248,7 @@ font-size: 5vmin;
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-timing-function: steps(24);
+        animation-play-state: paused;
         }
         
         .is-scrolling .sprite2{
@@ -286,10 +292,11 @@ font-size: 5vmin;
         }   
 
 
-.chapitre4{
+#chapitre4{
     position: relative;
     background-size: cover;
     z-index: 3;
+    border: 1px solid red;
     }
 
 .no1{
@@ -351,9 +358,10 @@ font-size: 5vmin;
         z-index: 2;
         }   
 
-.chapitre5{
+#chapitre5{
     position: relative;
     background-size: cover;
+    border: 1px solid red;
     }
 
 .asteroid1{
@@ -401,9 +409,10 @@ font-size: 5vmin;
         z-index: 2;
         }   
 
-.chapitre6{
+#chapitre6{
     position: relative;
     background-size: cover;
+    border: 1px solid red;
     }
 
 .Briser1{
@@ -458,9 +467,10 @@ font-size: 5vmin;
         z-index: 2;
         }   
         
-.chapitre7{
+#chapitre7{
     position: relative;
     background-size: cover;
+    border: 1px solid red;
     }
 
 .asteroid4{
@@ -531,9 +541,10 @@ font-size: 5vmin;
         z-index: 2;
         }   
 
-.chapitre8{
+#chapitre8{
     position: relative;
     background-size: cover;
+    border: 1px solid red;
     }
 
 .cthulu{
@@ -630,3 +641,4 @@ height: 200vh;
                  margin: 0 auto;
               }
               
+

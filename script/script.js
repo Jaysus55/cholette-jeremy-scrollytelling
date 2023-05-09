@@ -1,3 +1,6 @@
+gsap.registerPlugin(ScrollTrigger);
+
+
 var CTA = gsap.from(".CTA" , {
     y:-50,
     opacity:0,
@@ -8,7 +11,15 @@ var CTA = gsap.from(".CTA" , {
 
 
   gsap.from(".terre" , {
-    rotation:-360,duration:150,repeat:-1,ease:"none"
+    rotation:360,duration:150,ease:"none",
+    scrollTrigger: {
+      scrub: true,
+      pin: true,
+      markers: true,
+      start: 'top top',
+      end: '300% bottom',
+      trigger: 'header',
+    }
   })  
 
 
@@ -24,31 +35,36 @@ var ovni = gsap.from(".ovni" , {
 
 /*Chapitre1-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-var planete1 = gsap.from(".planete01" , {
-  rotation:-360,duration:150,repeat:-1,ease:"none"
-})  
-
-var planete2 = gsap.from(".planete02" , {
-  rotation:360,duration:150,repeat:-1,ease:"none"
-})  
+gsap.timeline({ scrollTrigger: {
+  scrub: true,
+  pin: true,
+  markers: true,
+  start: 'top top',
+  end: '300% bottom',
+  trigger: '#chapitre1',
+}})
+.from(".planete02" , {rotation:360,duration:150,ease:"none"})
+.from(".planete01" , {rotation:-360,duration:150,ease:"none"}, '<')
 
 /*Chapitre2-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-var planete3 = gsap.from(".planete03" , {
-  rotation:360,duration:150,repeat:-1,ease:"none"
-})  
-
-var fusee = gsap.fromTo(".fusee",{x:"-400%", y:"100"},{x:"1900%", y:"-1000",duration:"10"},{y:"-400%"},{y:"1900%"})  
-
-var planete4 = gsap.from(".planete04" , {
-  rotation:-360,duration:150,repeat:-1,ease:"none"
-})  
-
+gsap.timeline({scrollTrigger:{
+  scrub: true,
+  pin: true,
+  markers: true,
+  start: 'top top',
+  end: '600% bottom',
+  trigger: '#chapitre2',  
+}})
+.from(".planete03" , {rotation:360,duration:150,ease:"none"})
+.from(".planete04" , {rotation:-360,duration:150,ease:"none"},"<")
+.fromTo(".fusee",{x:"-400%", y:"100"},{x:"1900%", y:"-1000", duration:"100"}, '<')  
 /*Chapitre3-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 var planete5 = gsap.from(".planete05" , {
   rotation:-360,duration:150,repeat:-1,ease:"none"
 })  
+
 
 /*Chapitre4-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
