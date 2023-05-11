@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 
 var CTA = gsap.from(".CTA" , {
     y:-50,
@@ -45,7 +46,7 @@ gsap.timeline({ scrollTrigger: {
 }})
 .from(".planete02" , {rotation:360,duration:150,ease:"none"})
 .from(".planete01" , {rotation:-360,duration:150,ease:"none"}, '<')
-.to("#chapitre1", {backgroundPosition: "50% 100%",ease: "none"})
+.to("#chapitre1", {backgroundPosition: "50% 100%",ease: "none",})
 
 /*Chapitre2-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -54,12 +55,12 @@ gsap.timeline({scrollTrigger:{
   pin: true,
   markers: true,
   start: 'top top',
-  end: '600% bottom',
+  end: '500% bottom',
   trigger: '#chapitre2',  
 }})
 .from(".planete03" , {rotation:360,duration:150,ease:"none"})
 .from(".planete04" , {rotation:-360,duration:150,ease:"none"},"<")
-.fromTo(".fusee",{x:"-400%", y:"100"},{x:"1900%", y:"-1000", duration:"100"}, '<')  
+.from('.fusee', {motionPath: '#chemin',duration:100})
 /*Chapitre3-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 gsap.timeline({scrollTrigger:{
