@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
+
 
 var CTA = gsap.from(".CTA" , {
     y:-50,
@@ -11,17 +12,7 @@ var CTA = gsap.from(".CTA" , {
 
 
 
-  gsap.from(".terre" , {
-    rotation:360,duration:150,ease:"none",
-    scrollTrigger: {
-      scrub: true,
-      pin: true,
-      markers: true,
-      start: 'top top',
-      end: '300% bottom',
-      trigger: 'header',
-    }
-  })  
+  
 
 
 
@@ -32,6 +23,22 @@ var ovni = gsap.from(".ovni" , {
   repeat:-1,
   yoyo: true,
 })
+
+
+gsap.timeline({ scrollTrigger: {
+  scrub: true,
+  pin: true,
+  markers: true,
+  start: 'top top',
+  end: '300% bottom',
+  trigger: 'header',
+}})
+.fromTo("#dessin",{ drawSVG: "0% 0%" },{drawSVG: "0% 100%",duration: 100,ease: "power1.inOut"})
+.from(".terre" , {rotation:360,duration:150,ease:"none",}) 
+
+
+
+
 
 
 /*Chapitre1-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -60,7 +67,7 @@ gsap.timeline({scrollTrigger:{
 }})
 .from(".planete03" , {rotation:360,duration:150,ease:"none"})
 .from(".planete04" , {rotation:-360,duration:150,ease:"none"},"<")
-.from('.fusee', {motionPath: '#chemin',duration:100})
+.from('.fusee', {motionPath: '#chemin',align: '#chemin', start: 0,end: 1,alignOrigin: [-0.5, -0.5],duration:100},"<")
 /*Chapitre3-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 gsap.timeline({scrollTrigger:{

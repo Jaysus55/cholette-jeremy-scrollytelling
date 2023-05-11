@@ -22,10 +22,20 @@
         <img class="CTA" src="img/img_elements_visuels/triangle.png" alt="triangle">
         <img class="terre" src="img/img_elements_visuels/planete_terre.png" alt="terre">    
         <img class="ovni" src="img/img_personnages/ovni.svg" alt="ovni">
-        <svg id="dessin" width="343" height="374" viewBox="0 0 343 374" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52 372L170 2L313 372L2 138H341L52 372Z" stroke="black"/></svg>
-            
+        <svg class="dessin" width="343" height="374" viewBox="0 0 343 374" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="dessin" d="M52 372L170 2L313 372L2 138H341L52 372Z" stroke="black"/></svg>
         <p class="intro">« Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
         © 2023 - Conception : Jérémy Cholette et Étienne Charron| Développement Web : Marie-Michelle Ouellet. »</p>
+        <ul class="technique-gsap"> 
+            <li>animation rotation</li> 
+            <li>drawSVG</li> 
+            <li>scrollTrigger 
+                <ul> 
+                    <li>trigger=header</li> 
+                    <li>scrub=true</li> 
+                    <li>pin=true</li> 
+                </ul> 
+            </li> 
+        </ul> 
 </header>
 
 <main>
@@ -40,6 +50,17 @@
     <img class="planete01" src="img/img_elements_visuels/planete01.png" alt="planete01">
     <img class="planete02" src="img/img_elements_visuels/planete02.png" alt="planete02">
 
+    <ul class="technique-gsap"> 
+        <li>animation rotation</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=chapitre1</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+            rotation seulement
+        </li> 
+    </ul> 
 </section>
 
 <!--Chapitre2------------------------------------------------------------------------------------------------------------------------------------>
@@ -56,6 +77,18 @@
     <img class="planete04" src="img/img_elements_visuels/planete04.png" alt="planete04">
     <img class="fusee" src="img/img_elements_visuels/fusee.svg" alt="fusee">
 
+    <ul class="technique-gsap"> 
+        <li>animation rotation</li> 
+        <li>animation motionPath</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=chapitre2</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+        </li> 
+    </ul> 
+
 </section>
 
 <!--Chapitre3------------------------------------------------------------------------------------------------------------------------------------>
@@ -69,7 +102,19 @@
     <img class="planete05" src="img/img_elements_visuels/planete05.png" alt="planete05">
     <div class="sprite1"></div>  
     <div class="sprite2"></div>  
-
+    <ul class="technique-gsap"> 
+        <li>animation rotation</li> 
+        <li>animation spritesheet</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=chapitre3</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+            spritesheet s'anime si la classe is-scrolling est présente dans le body
+        </li> 
+    </ul> 
+    
 </section>
 
 <!--Chapitre4------------------------------------------------------------------------------------------------------------------------------------>
@@ -85,7 +130,17 @@
     <img class="baleine no3" src="img/img_personnages/Baleine.svg" alt="baleine3">
     <img class="baleine no4" src="img/img_personnages/Baleine.svg" alt="baleine4">
     <img class="baleine no5" src="img/img_personnages/Baleine.svg" alt="baleine5">
-
+    <ul class="technique-gsap"> 
+        <li>animation translation</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=Chapitre4</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+           animation sur la position du x
+        </li> 
+    </ul> 
 </section>
 
 <!--Chapitre5------------------------------------------------------------------------------------------------------------------------------------>
@@ -99,7 +154,18 @@
     <img class="asteroid1" src="img/img_elements_visuels/Asteroid_1.svg" alt="asteroid1">
     <img class="asteroid2" src="img/img_elements_visuels/Asteroid_2.svg" alt="asteroid2">
     <img class="asteroid3" src="img/img_elements_visuels/Asteroid_3.svg" alt="asteroid3">
-
+    <ul class="technique-gsap"> 
+        <li>animation rotation et translation</li> 
+        <li>animation translation</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=chapitre5</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+            rotation et translation des astéroides
+        </li> 
+    </ul> 
 
 </section>
 
@@ -117,6 +183,17 @@
     <img class="planete Briser3" src="img/img_elements_visuels/planetecasser03.png" alt="planeteBriser3">
     <img class="planete Briser4" src="img/img_elements_visuels/planetecasser04.png" alt="planeteBriser4">
     </div>
+    <ul class="technique-gsap"> 
+        <li>animation déconstruction</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=chapitre6</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+            translation du y
+        </li> 
+    </ul> 
 
 </section>
 
@@ -134,6 +211,17 @@
     <img class="asteroid7" src="img/img_elements_visuels/Asteroid_1.svg" alt="asteroid7">
     <img class="asteroid8" src="img/img_elements_visuels/Asteroid_2.svg" alt="asteroid8">
     <img class="asteroid9" src="img/img_elements_visuels/Asteroid_3.svg" alt="asteroid9">
+    <ul class="technique-gsap"> 
+        <li>animation rotation et translation</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=chapitre2</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+           translation et rotation des astéroides
+        </li> 
+    </ul> 
 
 </section>
 
@@ -146,6 +234,17 @@
     <p>Mais qui est-ce? se demanda l'ovni. La créature semblait hostile. En un clin d'oeil elle dévora le vaisseau du petit ovni et ce dernier fût englouti avec le vaisseau.</p>
     </div> 
     <img class="cthulu" src="img/img_personnages/cthulu.svg" alt="cthulu">    
+    <ul class="technique-gsap"> 
+        <li>animation translation et opacité</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger=chapitre2</li> 
+                <li>scrub=true</li> 
+                <li>pin=true</li> 
+            </ul> 
+            translation et opacité de cthulu
+        </li> 
+    </ul> 
 
 </section>
 
@@ -156,7 +255,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
-    <!--<script src="/gsap-plugiciels-payants-nepaspubliersurgit/DrawSVGPlugin3.min.js"></script>-->
+    <script src="/gsap-plugiciels-payants-nepaspubliersurgit/DrawSVGPlugin3.min.js"></script>
     <script src="script/script.js"></script>   
 </body>
 </html>

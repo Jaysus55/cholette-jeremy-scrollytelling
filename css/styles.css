@@ -26,6 +26,28 @@ section{
 }
 
 
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
+
+
 /*Entête -----------------------------------------------------------------------------------------------------*/
 
 .intro{
@@ -80,6 +102,19 @@ section{
     top: 28vh;
     left: 30vw;
     }
+
+#dessin{
+stroke: var(--blanc);
+stroke-width: 5;
+    }
+
+.dessin {
+position: relative;
+top: 10vh;
+left: 80vw;
+width: 10vw;
+height: 10vh;
+        }  
 
 /*Chapitre1 -----------------------------------------------------------------------------------------------------*/
 
@@ -174,18 +209,15 @@ z-index: 1;
 
 .fusee{
     position: absolute;
-    display: inline-block;
-    transform: translate(50%) rotate(50deg);
+    transform: translate(50%) rotate(-125deg);
     width: 5vw;
-    top: 90vh;
-    left: 10vw;
-    padding: 0;
 }
 
 .chemin{
 position: absolute;
-display: block;
+opacity: 0;
 }
+
 
 
 /*Chapitre3 -----------------------------------------------------------------------------------------------------*/
