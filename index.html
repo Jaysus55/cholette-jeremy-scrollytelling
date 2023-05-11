@@ -22,7 +22,7 @@
         <img class="CTA" src="img/img_elements_visuels/triangle.png" alt="triangle">
         <img class="terre" src="img/img_elements_visuels/planete_terre.png" alt="terre">    
         <img class="ovni" src="img/img_personnages/ovni.svg" alt="ovni">
-        <svg class="dessin" width="343" height="374" viewBox="0 0 343 374" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="dessin" d="M52 372L170 2L313 372L2 138H341L52 372Z" stroke="black"/></svg>
+        <svg class="draw" width="343" height="374" viewBox="0 0 343 374" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="draw" d="M52 372L170 2L313 372L2 138H341L52 372Z" stroke="black"/></svg>
         <p class="intro">« Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
         © 2023 - Conception : Jérémy Cholette et Étienne Charron| Développement Web : Marie-Michelle Ouellet. »</p>
         <ul class="technique-gsap"> 
@@ -49,6 +49,11 @@
     </div>
     <img class="planete01" src="img/img_elements_visuels/planete01.png" alt="planete01">
     <img class="planete02" src="img/img_elements_visuels/planete02.png" alt="planete02">
+    <svg class="morph" width="196" height="264" viewBox="0 0 196 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="fleche" d="M136 1H56V158H2L100 263L194 158H136V1Z" stroke="#FAFF00"/>
+        <path id="sourire" d="M125.815 103.935L123.586 105.089C96.8566 118.932 64.9568 118.498 38.6154 103.935M89.3392 1H75.6608C34.4268 1 1 34.3548 1 75.5C1 116.645 34.4268 150 75.6608 150H89.3392C130.573 150 164 116.645 164 75.5C164 34.3548 130.573 1 89.3392 1ZM69.9615 51.6145C69.9615 58.8385 64.0927 64.6947 56.8531 64.6947C49.6136 64.6947 43.7448 58.8385 43.7448 51.6145C43.7448 44.3905 49.6136 38.5344 56.8531 38.5344C64.0927 38.5344 69.9615 44.3905 69.9615 51.6145ZM120.685 51.6145C120.685 58.8385 114.816 64.6947 107.577 64.6947C100.337 64.6947 94.4685 58.8385 94.4685 51.6145C94.4685 44.3905 100.337 38.5344 107.577 38.5344C114.816 38.5344 120.685 44.3905 120.685 51.6145Z" stroke="#FAFF00"/>
+        </svg>
+
 
     <ul class="technique-gsap"> 
         <li>animation rotation</li> 
@@ -131,14 +136,18 @@
     <img class="baleine no4" src="img/img_personnages/Baleine.svg" alt="baleine4">
     <img class="baleine no5" src="img/img_personnages/Baleine.svg" alt="baleine5">
     <ul class="technique-gsap"> 
-        <li>animation translation</li> 
+        <li>animation toggleActions avec repeat</li> 
         <li>scrollTrigger 
             <ul> 
                 <li>trigger=Chapitre4</li> 
-                <li>scrub=true</li> 
+                <li>toggleActions</li> 
+                <li>play</li> 
+                <li>pause</li> 
+                <li>resume</li> 
+                <li>pause</li> 
                 <li>pin=true</li> 
             </ul> 
-           animation sur la position du x
+           animation sur la position du x qui joue à l'infini et se stop lorsque le marker quitte le chapitre
         </li> 
     </ul> 
 </section>
@@ -155,15 +164,19 @@
     <img class="asteroid2" src="img/img_elements_visuels/Asteroid_2.svg" alt="asteroid2">
     <img class="asteroid3" src="img/img_elements_visuels/Asteroid_3.svg" alt="asteroid3">
     <ul class="technique-gsap"> 
-        <li>animation rotation et translation</li> 
-        <li>animation translation</li> 
+        <li>animation toggleActions</li> 
+        <li>animation translation et rotation</li> 
         <li>scrollTrigger 
             <ul> 
                 <li>trigger=chapitre5</li> 
-                <li>scrub=true</li> 
+                <li>toggleActions</li> 
+                <li>play</li> 
+                <li>pause</li> 
+                <li>reverse</li> 
+                <li>pause</li> 
                 <li>pin=true</li> 
             </ul> 
-            rotation et translation des astéroides
+            rotation et translation des astéroides avec un toggleActions qui va jouer l'animation, la terminer lorsque les markers quitte la section et jouer en reverse lorsque l'on revient
         </li> 
     </ul> 
 
@@ -212,14 +225,14 @@
     <img class="asteroid8" src="img/img_elements_visuels/Asteroid_2.svg" alt="asteroid8">
     <img class="asteroid9" src="img/img_elements_visuels/Asteroid_3.svg" alt="asteroid9">
     <ul class="technique-gsap"> 
-        <li>animation rotation et translation</li> 
+        <li>animation Parallax</li> 
         <li>scrollTrigger 
             <ul> 
-                <li>trigger=chapitre2</li> 
+                <li>trigger=chapitre7</li> 
                 <li>scrub=true</li> 
                 <li>pin=true</li> 
             </ul> 
-           translation et rotation des astéroides
+           translation et rotation des astéroides avec un effet de parallax sur le background
         </li> 
     </ul> 
 
@@ -255,7 +268,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
-    <script src="/gsap-plugiciels-payants-nepaspubliersurgit/DrawSVGPlugin3.min.js"></script>
+    <!--<script>scr="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"</script>-->
+    <!--<script>scr="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"</script>-->
     <script src="script/script.js"></script>   
 </body>
 </html>
