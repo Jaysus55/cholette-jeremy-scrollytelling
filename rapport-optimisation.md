@@ -1,7 +1,6 @@
 # Rapport d'optimisation du projet ScrollyTelling
 
-Page Speed Insights - Rapport du 11 Mai, 2023, 8:03:18 PM  
-[PageSpeed](https://pagespeed.web.dev/analysis/https-jaysus55-github-io-cholette-jeremy-scrollytelling/nt4g74fiow?form_factor=desktop)
+[Page Speed Insights - Rapport du 11 Mai, 2023, 8:03:18 PM](https://pagespeed.web.dev/analysis/https-jaysus55-github-io-cholette-jeremy-scrollytelling/nt4g74fiow?form_factor=desktop)
 
 ## Problème #1
 ### Sert des images en basse résolution
