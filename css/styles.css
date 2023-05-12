@@ -122,7 +122,7 @@ height: 10vh;
 #chapitre1{
 position: relative;
 background-size: cover;
-background-image: url(/img_arriere_plan/etoile_01.png);
+background-image: url('../img/img_arriere_plan/etoile_01.png');
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: scroll;
