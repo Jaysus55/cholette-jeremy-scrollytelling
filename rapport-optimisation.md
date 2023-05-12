@@ -31,3 +31,6 @@ Pour résoudre le problème il faudrait supprimer la ligne de code qui cause l'e
 
 ### Résultat
 Je n'ai pas trouver la ligne de code ou le fichier qui causait l'erreur, je n'ai donc pas pu résoudre le problème.
+
+## Rapport ScrollyTelling après optimisation
+[Page Speed Insights - Rapport du 11 Mai, 2023, 8:52:16 PM](https://pagespeed.web.dev/analysis/https-jaysus55-github-io-cholette-jeremy-scrollytelling/roit98it7x?form_factor=desktop)
