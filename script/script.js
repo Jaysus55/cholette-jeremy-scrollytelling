@@ -29,7 +29,6 @@ var ovni = gsap.from(".ovni" , {
 gsap.timeline({ scrollTrigger: {
   scrub: true,
   pin: true,
-  markers: true,
   start: 'top top',
   end: '500% bottom',
   trigger: 'header',
@@ -47,7 +46,6 @@ gsap.timeline({ scrollTrigger: {
 gsap.timeline({ scrollTrigger: {
   scrub: true,
   pin: true,
-  markers: true,
   start: 'top top',
   end: '300% bottom',
   trigger: '#chapitre1',
@@ -62,7 +60,6 @@ gsap.timeline({ scrollTrigger: {
 gsap.timeline({scrollTrigger:{
   scrub: true,
   pin: true,
-  markers: true,
   start: 'top top',
   end: '500% bottom',
   trigger: '#chapitre2',  
@@ -75,7 +72,6 @@ gsap.timeline({scrollTrigger:{
 gsap.timeline({scrollTrigger:{
   scrub: true,
   pin: true,
-  markers: true,
   start: 'top top',
   end: '300% bottom',
   trigger: '#chapitre3',  
@@ -102,7 +98,6 @@ body.classList.remove("is-scrolling");
 
   var baleines = gsap.timeline({scrollTrigger:{
     pin: true,
-    markers: true,
     start: 'top top',
     end: '500% bottom',
     trigger: '#chapitre4',  
@@ -118,7 +113,6 @@ body.classList.remove("is-scrolling");
 
 var asteroidPetit = gsap.timeline({scrollTrigger:{
   pin: true,
-  markers: true,
   start: 'top top',
   end: '300% bottom',
   trigger: '#chapitre5',  
@@ -133,7 +127,6 @@ var asteroidPetit = gsap.timeline({scrollTrigger:{
   var brisement = gsap.timeline({scrollTrigger:{
     scrub: true,
     pin: true,
-    markers: true,
     start: 'top top',
     end: '400% bottom',
     trigger: '#chapitre6',  
@@ -151,7 +144,6 @@ const chapterHeight7 = document.getElementById("chapitre7").scrollHeight;
 var asteroidGros = gsap.timeline({scrollTrigger:{
   scrub: true,
   pin: true,
-  markers: true,
   start: 'top top',
   end: '400% bottom',
   trigger: '#chapitre7',  
@@ -171,7 +163,6 @@ gsap.to("#chapitre7", {
       start: "top bottom",
       end: "500% top",
       scrub: true,
-      markers: true,
       duration:100,
   }
 });
@@ -185,7 +176,6 @@ var cthulu = gsap.from(".cthulu" , {
   scrollTrigger:{
     scrub: true,
     pin: true,
-    markers: true,
     start: 'top top',
     end: '250% bottom',
     trigger: '#chapitre8',  
