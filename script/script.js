@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+/*gsap.registerPlugin(DrawSVGPlugin);*/
+/*gsap.registerPlugin(MorphSVGPlugin);*/
 
 
 var CTA = gsap.from(".CTA" , {
@@ -29,7 +29,7 @@ gsap.timeline({ scrollTrigger: {
   end: '500% bottom',
   trigger: 'header',
 }})
-.fromTo("#draw",{ drawSVG: "0% 0%" },{drawSVG: "0% 100%",duration: 300,ease: "power1.inOut"})
+/*.fromTo("#draw",{ drawSVG: "0% 0%" },{drawSVG: "0% 100%",duration: 300,ease: "power1.inOut"})*/
 .from(".terre" , {rotation:360,duration:150,ease:"none",}) 
 
 
@@ -42,7 +42,7 @@ gsap.timeline({ scrollTrigger: {
   end: '300% bottom',
   trigger: '#chapitre1',
 }})
-.to("#fleche", {duration: 100, morphSVG:{shape:"#sourire", shapeIndex:5}},'<')
+/*.to("#fleche", {duration: 100, morphSVG:{shape:"#sourire", shapeIndex:5}},'<')*/
 .from(".planete02" , {rotation:360,duration:150,ease:"none"})
 .from(".planete01" , {rotation:-360,duration:150,ease:"none"}, '<')
 .to("#chapitre1", {backgroundPosition: "50% 100%",ease: "none",})
