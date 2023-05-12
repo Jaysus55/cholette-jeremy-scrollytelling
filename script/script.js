@@ -13,10 +13,6 @@ var CTA = gsap.from(".CTA" , {
 
 
 
-  
-
-
-
 var ovni = gsap.from(".ovni" , {
   y:20,
   rotation:3,
@@ -37,10 +33,6 @@ gsap.timeline({ scrollTrigger: {
 .from(".terre" , {rotation:360,duration:150,ease:"none",}) 
 
 
-
-
-
-
 /*Chapitre1-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 gsap.timeline({ scrollTrigger: {
@@ -53,7 +45,7 @@ gsap.timeline({ scrollTrigger: {
 .to("#fleche", {duration: 100, morphSVG:{shape:"#sourire", shapeIndex:5}},'<')
 .from(".planete02" , {rotation:360,duration:150,ease:"none"})
 .from(".planete01" , {rotation:-360,duration:150,ease:"none"}, '<')
-.to("#chapitre1", {backgroundPosition: "50% 100%",ease: "none",});
+.to("#chapitre1", {backgroundPosition: "50% 100%",ease: "none",})
 
 /*Chapitre2-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
